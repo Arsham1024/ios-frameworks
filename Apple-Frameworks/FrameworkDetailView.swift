@@ -36,8 +36,14 @@ struct FrameworkDetailView: View {
             Button{
                 
             }label: {
-                AFButton(title: "Learn More")
+//                AFButton(title: "Learn More")
+                
+                // apple looking buttons
+                Label("Learn More", systemImage: "book.fill")
             }
+            .buttonStyle(.bordered)
+            .controlSize(.large)
+            .tint(.red)
         }
     }
 }
